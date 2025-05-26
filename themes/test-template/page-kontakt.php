@@ -5,12 +5,11 @@
 	<?php while(have_posts()) : the_post(); ?>
 		<main>
         <section class="formularz">
-            <form class="forme" action="kontakt">
-                <h1 style="text-align: center; font-size: 40px;">
-                    Formularz kontaktowy
-                </h1>
-                <textarea name="text" id="kontakt" placeholder="Tutaj napisz swoją wiadomość..."></textarea>
-                <button class="send" type="submit"> Wyślij</button>
+            <h1 style="text-align: center; font-size: 40px;">
+                Formularz kontaktowy 
+            </h1>
+            <br>
+            <?php echo do_shortcode( '[contact-form-7 id="bbfcf3b" title="Contact form 1"]' )?>
             </form>
         </section>
     </main>
